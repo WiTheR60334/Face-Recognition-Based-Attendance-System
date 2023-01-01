@@ -194,25 +194,27 @@ def Take_Attendance():
 
                         if matches[best_match_index]: 
                             name = known_faces_names[best_match_index]#to konw the name of the face     
-                        a = pd.read_csv(Student_Details)
-                        df=pd.DataFrame(a)
-                        c=df.loc[df["Enrollment No. "]==name] #To get name of user from students details.csv using enrollment no.
-                        b=c.iloc[0,1]
-                        d = str(name)+'-'+str(b)
-                        face_names.append(name)#to append name with the face
-
-                        if name in known_faces_names:
-                            if name in students:
-                                students.remove(name)#so that multiple names wont be written
-                                tmsg.showinfo("Face Matched",str(b)+" your Attendane is taken. You can exit the camera window by clicking 'q'",parent=root1)
-                                current_time=present_time.strftime("%H:%M:%S")#hour-minute-second
-                                linewriter.writerow([name,str(b),current_time,subvalue.get()]) 
-
+                            a = pd.read_csv(Student_Details)
+                            df=pd.DataFrame(a)
+                            c=df.loc[df["Enrollment No. "]==name] #To get name of user from students details.csv using enrollment no.
+                            b=c.iloc[0,1]
+                            d = str(name)+'-'+str(b)
+                            face_names.append(name)#to append name with the face
+                            
                             for (x,y,w,h) in faces:
                                 cv.rectangle(img,(x,y),(x+w,y+h),(0,255,255),5)#img, rect co-ordinates,color(bgr),pixels
                                 font = cv.FONT_HERSHEY_SIMPLEX
                                 cv.putText(img, str(d), (x, y-7), font, 1.0, (255,0,0), 2)#To write name on top of the rectangle
 
+                            if name in known_faces_names:
+                                if name in students:
+                                    students.remove(name)#so that multiple names wont be written
+                                    tmsg.showinfo("Face Matched",str(b)+" your Attendane is taken. You can exit the camera window by clicking 'q'",parent=root1)
+                                    current_time=present_time.strftime("%H:%M:%S")#hour-minute-second
+                                    linewriter.writerow([name,str(b),current_time,subvalue.get()]) 
+                        else:
+                            pass
+                          
                 root1.wm_iconbitmap(AU_Icon)  
                 window_name = "attendance system"
                 cv.namedWindow(window_name, cv.WINDOW_NORMAL)
