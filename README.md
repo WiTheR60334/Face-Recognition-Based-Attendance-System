@@ -20,14 +20,14 @@ Attendance System based on Face Recognition using Python.
 - Download my Repository 
 - Open `Attendance.py` in VSCode or in any other IDE and change the all paths with your system path
 - Change the paths in following code lines:
-6 to 13
-67
-85
-145
-159
-164
-167
-174
+6 to 13,
+67,
+85,
+145,
+159,
+164,
+167,
+174,
 242
 - Now, you can run `Attendance.py`.
 
