@@ -9,7 +9,6 @@ Attendance System based on Face Recognition using Python.
 ### Code Requirements
 - Opencv(`pip install opencv-python`)
 - Tkinter(`pip install tkinter`)
-- PIL (`pip install Pillow`)
 - Pandas(`pip install pandas`)
 - go to: https://visualstudio.microsoft.com/ and download the community version of VSCode, after downloading install it. Now, choose the Desktop Development with C++ and Python Development and install them.
 - Cmake(`pip install cmake`)
