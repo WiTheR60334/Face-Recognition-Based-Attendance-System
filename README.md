@@ -27,7 +27,7 @@ Attendance System based on Face Recognition using Python.
 164,
 167,
 174,
-242
+244
 - Now, you can run `Attendance.py`.
 
 ### Project Structure
