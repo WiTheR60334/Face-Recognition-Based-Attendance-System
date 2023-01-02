@@ -125,7 +125,7 @@ def Take_Attendance():
         if subvalue.get() == "": #If subvalue is null
             tmsg.showinfo("Enter your Subject", "Please enter Subject !!!",parent=root1)
         else :   #To recognise your face 
-            tmsg.showinfo("To quit the window","Press 'q' to exit the window")
+            tmsg.showinfo("To quit the window","Press 'q' to exit the window",parent=root1)
             import cv2 as cv
             import face_recognition,csv,os
             import numpy as np
