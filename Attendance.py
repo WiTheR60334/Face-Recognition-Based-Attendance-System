@@ -125,6 +125,7 @@ def Take_Attendance():
         if subvalue.get() == "": #If subvalue is null
             tmsg.showinfo("Enter your Subject", "Please enter Subject !!!",parent=root1)
         else :   #To recognise your face 
+            tmsg.showinfo("To quit the window","Press 'q' to exit the window")
             import cv2 as cv
             import face_recognition,csv,os
             import numpy as np
@@ -213,7 +214,10 @@ def Take_Attendance():
                                     current_time=present_time.strftime("%H:%M:%S")#hour-minute-second
                                     linewriter.writerow([name,str(b),current_time,subvalue.get()]) 
                         else:
-                            pass
+                            for (x,y,w,h) in faces:
+                                cv.rectangle(img,(x,y),(x+w,y+h),(0,255,255),5)
+                                font = cv.FONT_HERSHEY_SIMPLEX
+                                cv.putText(img, "Face Not Matched", (x, y-7), font, 1.0, (255,0,0), 2)
                           
                 root1.wm_iconbitmap(AU_Icon)  
                 window_name = "attendance system"
