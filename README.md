@@ -46,14 +46,21 @@ Attendance System based on Face Recognition using Python.
 ### Basic UI
 ![Screenshot 2023-01-01 121854](https://user-images.githubusercontent.com/115364885/210163088-9449c06d-d311-416e-b008-727b1800e364.png)
 
+
+
 ### Registering New Student
 ![image](https://user-images.githubusercontent.com/115364885/210163302-16f97c16-4912-465a-bb70-d51bb8622828.png)
+
+
 
 ### When it Recognises me
 ![Screenshot (698)](https://user-images.githubusercontent.com/115364885/210163242-00d68c1d-1a97-4cfd-81e7-fc5b5a49ccba.png)
 
+
+
 ### When a face is not registered
 ![Screenshot (708)](https://user-images.githubusercontent.com/115364885/213865790-f970adca-8818-4479-9e37-5d5cb806b685.png)
+
 
 
 ### Filling the the attendance in csv file and viewing your attendance
