@@ -52,6 +52,10 @@ Attendance System based on Face Recognition using Python.
 ### When it Recognises me
 ![Screenshot (698)](https://user-images.githubusercontent.com/115364885/210163242-00d68c1d-1a97-4cfd-81e7-fc5b5a49ccba.png)
 
+### When it Recognises me
+![Screenshot (708)](https://user-images.githubusercontent.com/115364885/213865790-f970adca-8818-4479-9e37-5d5cb806b685.png)
+
+
 ### Filling the the attendance in csv file and viewing your attendance
 ![image](https://user-images.githubusercontent.com/115364885/210163276-1650d45f-4078-4127-993d-33bd26c00273.png)
 
