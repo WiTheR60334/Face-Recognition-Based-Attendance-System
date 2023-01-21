@@ -25,7 +25,7 @@ def new_student():
     if not os.path.exists(Student_Details):
         f = open(Student_Details,"w",newline="")#Creating Student details.csv for storing the data
         writer=csv.writer(f)
-        writer.writerow(["Enrollment No. , Name"])
+        writer.writerow(["Enrollment No. ","Name"])
         f.close()
     else:
         pass #If csv is arleady created, the pass this statemnt 
