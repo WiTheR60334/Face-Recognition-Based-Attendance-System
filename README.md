@@ -52,7 +52,7 @@ Attendance System based on Face Recognition using Python.
 ### When it Recognises me
 ![Screenshot (698)](https://user-images.githubusercontent.com/115364885/210163242-00d68c1d-1a97-4cfd-81e7-fc5b5a49ccba.png)
 
-### When it Recognises me
+### When a face is not registered
 ![Screenshot (708)](https://user-images.githubusercontent.com/115364885/213865790-f970adca-8818-4479-9e37-5d5cb806b685.png)
 
 
